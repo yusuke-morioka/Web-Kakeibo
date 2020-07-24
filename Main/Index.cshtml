@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Web 家計簿";
+}
+
+<div class="jumbotron">
+    <h1>Web家計簿TOP</h1>
+    <p class="lead">Web家計簿へようこそ。yusukemorokaのポートフォリオです。2020/7/12制作開始。</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>登録</h2>
+        <p>お買い物の日にち、場所、品物、金額の登録を行います。</p>
+        <p><a class="btn btn-default" @Html.ActionLink("Go»", "Register","Main")</a></p>
+    </div>
+
+    <div class="col-md-4">
+        <h2>変更</h2>
+        <p>登録済みのデータの変更を行います。</p>
+        <p><a class="btn btn-default" @Html.ActionLink("Go»", "Change", "Main")</a></p>
+    </div>
+
+    <div class="col-md-4">
+        <h2>削除</h2>
+        <p>登録済みのデータの削除を行います。</p>
+        <p><a class="btn btn-default" @Html.ActionLink("Go»", "Delete", "Main")</a></p>
+    </div>
+
+</div>
