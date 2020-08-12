@@ -8,7 +8,7 @@
     </div>
 
 
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None" Height="164px" Width="973px">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None" Height="164px" Width="973px" AllowSorting="True">
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
         <Columns>
             <asp:BoundField DataField="Days" HeaderText="Days" SortExpression="Days" DataFormatString="{0:yyyy/MM/dd}" />
@@ -17,12 +17,12 @@
             <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
             <asp:TemplateField ShowHeader="False">
                 <EditItemTemplate>
-                    <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="True" CommandName="Update" Text="更新"></asp:LinkButton>
-                    &nbsp;<asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" CommandName="Cancel" Text="キャンセル"></asp:LinkButton>
+                    <asp:Button ID="Button1" runat="server" CausesValidation="True" CommandName="Update" Text="更新" />
+                    &nbsp;<asp:Button ID="Button2" runat="server" CausesValidation="False" CommandName="Cancel" Text="キャンセル" />
                 </EditItemTemplate>
                 <ItemTemplate>
-                    <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" CommandName="Edit" Text="編集"></asp:LinkButton>
-                    &nbsp;<asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" CommandName="Delete" OnClientClick="return confirm('本当に削除しますか？');" Text="削除"></asp:LinkButton>
+                    <asp:Button ID="Button1" runat="server" CausesValidation="False" CommandName="Edit" Text="編集" />
+                    &nbsp;<asp:Button ID="Button2" runat="server" CausesValidation="False" CommandName="Delete" OnClientClick="return confirm('本当に削除しますか？');" Text="削除" />
                 </ItemTemplate>
             </asp:TemplateField>
         </Columns>
