@@ -1,4 +1,4 @@
-﻿using Microsoft.Ajax.Utilities;
+using Microsoft.Ajax.Utilities;
 using System;
 using System.Collections.Generic;
 using System.EnterpriseServices;
@@ -17,11 +17,28 @@ namespace WebKakeibo01
     {
         protected void Button1_Click(object sender, EventArgs e)
         {
-            //Employeesテーブル内の最後のId値をAutoId変数に格納。
-            //AutoIdとTextBox1～4の値を取得し、SQL文を生成。それを変数「query」に格納
+            //Null判定。Nullがあれば登録しない。
+            if (TextBox1.Text == "")
+            {
+                Label1.Text = "　　⚠「いつ」欄が未入力です。";
+            }
+            else if (TextBox2.Text == "")
+            {
+                Label1.Text = "　　⚠「どこで」欄が未入力です。";
+            }
+            else if (TextBox3.Text == "")
+            {
+                Label1.Text = "　　⚠「なにを」欄が未入力です。";
+            }
+            else if (TextBox4.Text == "")
+            {
+                Label1.Text = "　　⚠「いくら」欄が未入力です。";
+            }
+
+            else
+            {
+            //TextBox1～4の値を取得し、SQL文を生成。それを変数「query」に格納
             var query = String.Format("INSERT INTO [dbo].[Employees] ([Days], [Shop], [Thing], [Price]) VALUES (N'{0}',N'{1}',N'{2}',{3})", TextBox1.Text, TextBox2.Text, TextBox3.Text, TextBox4.Text);
-
-
 
             //接続先データベースの指定
             SqlConnection con = new SqlConnection();
@@ -63,6 +80,7 @@ namespace WebKakeibo01
                 //接続の解除
                 con.Close();
                 Label1.Text = "　　登録完了しました！";
+            }
             }
             }
         }
