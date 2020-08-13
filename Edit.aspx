@@ -18,11 +18,11 @@
             <asp:TemplateField ShowHeader="False">
                 <EditItemTemplate>
                     <asp:Button ID="Button1" runat="server" CausesValidation="True" CommandName="Update" Text="更新" />
-                    &nbsp;<asp:Button ID="Button2" runat="server" CausesValidation="False" CommandName="Cancel" Text="キャンセル" />
+                    &emsp; &nbsp;<asp:Button ID="Button2" runat="server" CausesValidation="False" CommandName="Cancel" Text="キャンセル" />
                 </EditItemTemplate>
                 <ItemTemplate>
                     <asp:Button ID="Button1" runat="server" CausesValidation="False" CommandName="Edit" Text="編集" />
-                    &nbsp;<asp:Button ID="Button2" runat="server" CausesValidation="False" CommandName="Delete" OnClientClick="return confirm('本当に削除しますか？');" Text="削除" />
+                    &emsp; &ensp;<asp:Button ID="Button2" runat="server" CausesValidation="False" CommandName="Delete" OnClientClick="return confirm('本当に削除しますか？');" Text="削除" />
                 </ItemTemplate>
             </asp:TemplateField>
         </Columns>
