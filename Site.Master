@@ -53,7 +53,6 @@
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/Register">登録/Register</a></li>
                         <li><a runat="server" href="~/Edit">編集・削除/Edit</a></li>
-                        <li><a runat="server" href="~/Now">現在状況/Now</a></li>
                     </ul>
                 </div>
             </div>

@@ -34,7 +34,6 @@ namespace WebKakeibo01
             {
                 Label1.Text = "　　⚠「いくら」欄が未入力です。";
             }
-
             else
             {
             //TextBox1～4の値を取得し、SQL文を生成。それを変数「query」に格納

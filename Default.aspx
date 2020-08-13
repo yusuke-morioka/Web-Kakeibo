@@ -21,12 +21,6 @@
                 <a class="btn btn-default" runat="server" href="~/Edit">Go &raquo;</a>
             </p>
         </div>
-        <div class="col-md-4">
-            <h2>現在状況/Now</h2>
-            <p>
-                <a class="btn btn-default" runat="server" href="~/Now">Go &raquo;</a>
-            </p>
-        </div>
     </div>
 
 </asp:Content>

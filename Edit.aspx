@@ -39,7 +39,7 @@
     </asp:GridView>
 
 
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Employees] WHERE [Id] = @Id" InsertCommand="INSERT INTO [Employees] ([Id], [Days], [Shop], [Thing], [Price]) VALUES (@Id, @Days, @Shop, @Thing, @Price)" SelectCommand="SELECT * FROM [Employees]" UpdateCommand="UPDATE [Employees] SET [Days] = @Days, [Shop] = @Shop, [Thing] = @Thing, [Price] = @Price WHERE [Id] = @Id">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Employees] WHERE [Id] = @Id" InsertCommand="INSERT INTO [Employees] ([Id], [Days], [Shop], [Thing], [Price]) VALUES (@Id, @Days, @Shop, @Thing, @Price)" SelectCommand="SELECT * FROM [Employees] ORDER BY [Id] DESC" UpdateCommand="UPDATE [Employees] SET [Days] = @Days, [Shop] = @Shop, [Thing] = @Thing, [Price] = @Price WHERE [Id] = @Id">
         <DeleteParameters>
             <asp:Parameter Name="Id" Type="Int32" />
         </DeleteParameters>
