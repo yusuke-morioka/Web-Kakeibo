@@ -1,0 +1,2 @@
+C:\Users\moril\Source\Repos\Web-Kakeibo\obj\Debug\WebKakeibo01.csprojAssemblyReference.cache
+C:\Users\moril\Source\Repos\Web-Kakeibo\obj\Debug\WebKakeibo01.csproj.CoreCompileInputs.cache
